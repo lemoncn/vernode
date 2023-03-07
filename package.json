@@ -1,0 +1,22 @@
+{
+  "name": "vernode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node sev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemoncn/vernode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemoncn/vernode/issues"
+  },
+  "homepage": "https://github.com/lemoncn/vernode#readme",
+  "dependencies": {
+    "koa": "^2.14.1"
+  }
+}
