@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>region test</title>
+    <style>
+      html {
+        -overflow-y: scroll;
+      }
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 12px;
+        line-height: 1.666;
+        -webkit-text-size-adjust: none;
+      }
+      body,
+      textarea {
+        font-family: arial;
+      }
+      header,
+      footer,
+      section,
+      aside,
+      article,
+      nav,
+      hgroup,
+      figure,
+      figcaption,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      ul,
+      ol,
+      li,
+      form,
+      p,
+      dl,
+      dt,
+      dd,
+      blockquote,
+      legend,
+      table,
+      th,
+      td,
+      fieldset,
+      menu,
+      pre {
+        margin: 0;
+        padding: 0;
+      }
+      table,
+      th,
+      td,
+      img,
+      fieldset {
+        border: 0;
+      }
+      time,
+      mark,
+      output,
+      meter,
+      address,
+      cite,
+      em,
+      code,
+      var,
+      dfn,
+      ins,
+      i,
+      th,
+      caption {
+        font-style: normal;
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      th {
+        font-size: 100%;
+        font-weight: normal;
+      }
+      input,
+      select,
+      button,
+      textarea,
+      table {
+        margin: 0;
+        font-family: inherit;
+        font-size: 100%;
+      }
+      abbr,
+      acronym {
+        border: 0;
+        font-variant: normal;
+      }
+      q:before,
+      q:after {
+        content: "";
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      th,
+      caption {
+        text-align: left;
+      }
+      header,
+      footer,
+      section,
+      aside,
+      article,
+      nav,
+      hgroup,
+      figure,
+      figcaption {
+        display: block;
+      }
+      /* info */
+      body {
+        background: #fff;
+      }
+      h1 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 4;
+        width: 960px;
+        margin: 0 auto;
+      }
+      .testinfo {
+        tabel-layout: fixed;
+        border: 1px solid #c8d7e3;
+        width: 960px;
+        margin: 0 auto;
+      }
+      .testinfo td {
+        border-right: 1px solid #c8d7e3;
+        border-bottom: 1px solid #c8d7e3;
+        padding: 10px;
+        font-size: 14px;
+        background: #f2f7fb;
+        background: #fff;
+      }
+      .testinfo .testinfoti {
+        font-size: 12px;
+        color: #456c89;
+        background: #ebf2f6;
+        width: 200px;
+      }
+
+      .pluginfo {
+        tabel-layout: fixed;
+        border: 1px solid #c8d7e3;
+        font-size: 12px;
+      }
+      .pluginfo td {
+        border-right: 1px solid #c8d7e3;
+        border-bottom: 1px solid #c8d7e3;
+        padding: 10px;
+        font-size: 14px;
+        background: #fff;
+        font-size: 12px;
+      }
+
+      .ico {
+        display: inline-block;
+        vertical-align: middle;
+        width: 17px;
+        height: 17px;
+        overflow: hidden;
+        background: url(https://mimg.127.net/xm/all/clientinfo/img/info.png)
+          no-repeat;
+        margin-right: 8px;
+      }
+
+      #locationTest {
+        font-size: 14px;
+      }
+      #locationTest .fontWeight {
+        margin-left: 4px;
+      }
+
+      .testinfo .textinfoPass,
+      .testinfo .textinfoWarn {
+        background: url(https://mimg.127.net/xm/all/clientinfo/img/info.png)
+          no-repeat #fff;
+        padding-left: 30px;
+      }
+      .testinfo .textinfoPass {
+        background-position: -166px 14px;
+        color: #1f8919;
+      }
+      .testinfo .textinfoWarn {
+        background-position: -166px -18px;
+        background-color: #f8ebea;
+        color: #cc0000;
+      }
+
+      a {
+        color: rgb(93, 182, 227);
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        width: 800px;
+        height: 63px;
+        overflow: hidden;
+        margin: 0 auto;
+        color: #848585;
+        position: relative;
+        background: #fff;
+        line-height: 63px;
+        margin-top: 12px;
+      }
+      .footer a {
+        color: #999;
+        margin-right: 12px;
+        text-decoration: none;
+      }
+      .copyright {
+        margin-left: 12px;
+      }
+      .footerLogo {
+        display: inline-block;
+        float: left;
+        height: 22px;
+        width: 70px;
+        margin-right: 12px;
+        background: url(https://mimg.127.net/xm/all/clientinfo/img/info.png)
+          no-repeat;
+        vertical-align: top;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+      .footerLogo163 {
+        background-position: -96px -96px;
+      }
+      .footerLogo126 {
+        background-position: 0px -128px;
+      }
+      .footerLogoYeah {
+        background-position: -96px -128px;
+      }
+
+      #preload-info,
+      #nstool-info {
+        display: none;
+      }
+
+      .t-succ {
+        color: #1f8919;
+      }
+      .t-err {
+        color: #f00;
+      }
+      .infoBox {
+        background-color: #eef4f8;
+        border: 1px solid #e1e7eb;
+        padding: 10px;
+        color: #666;
+      }
+      /* .infoBox dl{padding: 5px;} */
+      .infoBox dt {
+        font-weight: bold;
+      }
+      .infoBox dd {
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <h1>region 对应池测试</h1>
+    <table class="testinfo" border="1" cellpadding="3" cellspacing="0">
+      <tbody valign="top">
+        <tr>
+          <td class="testinfoti">
+            <i class="ico" style="background-position: -64px 0"></i>浏览器版本：
+          </td>
+          <td id="browser-ver">Chrome 110.0.0.0</td>
+        </tr>
+        <tr>
+          <td class="testinfoti">
+            <i class="ico" style="background-position: -32px -64px"></i
+            >entry(t126):
+          </td>
+          <td>
+            <span class="t-succ">&#10003; 连接成功</span><br />
+            <span class="t-err">&#10005; 连接失败</span>
+            连接成功 <a href="javascript:void(0)">详细</a>
+            <div class="infoBox">
+              <dl>
+                <dt>df</dt>
+                <dd>asdf</dd>
+                <dt>df</dt>
+                <dd>asdf</dd>
+                <dt>df</dt>
+                <dd>asdf</dd>
+              </dl>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="app">
+        df{{ message }}
+    df</div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue!",
+        },
+      });
+    </script>
+  </body>
+</html>

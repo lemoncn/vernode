@@ -8,7 +8,9 @@ app.use((ctx,next)=>{
 
 app.use((ctx,next)=>{
     console.log('mid 2');
-    ctx.response.body = '我是中文'
+    console.log(ctx.query);
+    console.log(ctx.querystring);
+    ctx.response.body = '我是中文'+(ctx.querystring||'')
 });
 
 app.listen(8000,()=>{
