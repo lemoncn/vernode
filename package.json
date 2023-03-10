@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node sev.js"
+    "dev": "node sev.js",
+    "build": "node sev.js"
   },
   "repository": {
     "type": "git",
