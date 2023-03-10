@@ -1,0 +1,8 @@
+{
+  "builds": [
+    {
+      "src": "sev.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
