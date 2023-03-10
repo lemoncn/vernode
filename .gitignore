@@ -1,3 +1,8 @@
+# ide
+/.vscode
+/.idea
 
-node_modules
+
+/node_modules
+
 .vercel
